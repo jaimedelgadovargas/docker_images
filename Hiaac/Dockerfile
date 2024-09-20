@@ -28,7 +28,7 @@ RUN apt-get clean \
 COPY Miniforge3-Linux-x86_64.sh /usr/local/src
 RUN bash /usr/local/src/Miniforge3-Linux-x86_64.sh -b
 ENV PATH $PATH:/root/miniforge3/bin
-RUN conda install python=3.8 \
+RUN conda install python=3.8 -f \
     && conda install -c conda-forge jupyterlab
 
 # install packages by pip
