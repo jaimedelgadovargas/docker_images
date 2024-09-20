@@ -60,5 +60,4 @@ torchsummary
 tsaug
 imageio
 tensorboard
-
-
+readsettings
